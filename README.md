@@ -21,17 +21,9 @@ Depois, acesse `http://localhost:8080`.
    - renomeie `dist/` para `docs/` e selecione a pasta `/docs`.
 4. Salve e aguarde a URL do GitHub Pages.
 
-## Privacidade
-
-O site não inclui fotografias dos laudos, nomes completos, datas de nascimento, identificadores ou códigos dos documentos. Antes de tornar o repositório público, confirme se os primeiros nomes e as idades podem aparecer online.
-
 ## Estrutura
 
 - `dist/index.html` — conteúdo e estrutura semântica;
 - `dist/styles.css` — design responsivo, tema escuro e impressão;
 - `dist/app.js` — filtros, tabela, navegação e interações;
 - `.openai/hosting.json` — configuração de hospedagem estática.
-
-## Aviso
-
-O conteúdo é educativo e foi elaborado para organizar uma conversa clínica. Não substitui consulta, exame físico ou decisão médica individualizada.
