@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Leitura integrada e contextual dos exames laboratoriais de Ana e Vado — julho de 2026.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#101917">
+  <title>Leitura integrada dos exames — Ana &amp; Vado</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="topbar">
+    <a class="wordmark" href="#inicio" aria-label="Voltar ao início">
+      <span class="wordmark-mark" aria-hidden="true">AV</span>
+      <span><strong>Leitura integrada</strong><small>Exames · julho de 2026</small></span>
+    </a>
+    <div class="topbar-actions">
+      <button class="icon-button" id="themeToggle" type="button" aria-label="Alternar tema" title="Alternar tema">
+        <span aria-hidden="true">◐</span>
+      </button>
+      <button class="button button-ghost" id="printButton" type="button">Imprimir / PDF</button>
+    </div>
+  </header>
+
+  <div class="shell">
+    <aside class="sidebar" aria-label="Navegação principal">
+      <nav class="side-nav">
+        <a class="active" href="#inicio"><span>01</span>Visão geral</a>
+        <a href="#prioridades"><span>02</span>Prioridades</a>
+        <a href="#comparativo"><span>03</span>Comparativo</a>
+        <a href="#interpretacao"><span>04</span>Interpretação</a>
+        <a href="#resultados"><span>05</span>Todos os exames</a>
+        <a href="#plano"><span>06</span>Próximos passos</a>
+        <a href="#consultas"><span>07</span>Consulta médica</a>
+        <a href="#glossario"><span>08</span>Glossário simples</a>
+        <a href="#fontes"><span>09</span>Método e fontes</a>
+      </nav>
+      <div class="side-note">
+        <span class="eyebrow">Escopo</span>
+        <p>Leitura educativa para organizar decisões e perguntas. Não substitui avaliação clínica.</p>
+      </div>
+    </aside>
+
+    <main id="conteudo">
+      <section class="hero" id="inicio">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Painel clínico familiar · 27 jul 2026</p>
+          <h1>O contexto primeiro.<br><em>O número depois.</em></h1>
+          <p class="hero-lede">Uma leitura minuciosa dos exames de Ana e Vado, considerando rotina ativa, alimentação natural e a diferença entre intervalo laboratorial, risco real e diagnóstico.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#prioridades">Ver o que importa</a>
+            <a class="button button-ghost" href="#resultados">Abrir resultados</a>
+          </div>
+        </div>
+        <div class="hero-aside reveal">
+          <div class="principle-card">
+            <span class="principle-number">01</span>
+            <p>Faixas de referência ajudam a localizar um resultado; não decidem sozinhas se alguém está doente.</p>
+          </div>
+          <div class="principle-card">
+            <span class="principle-number">02</span>
+            <p>Tendência, sintomas, histórico, medicamentos e risco absoluto podem mudar a interpretação.</p>
+          </div>
+          <div class="principle-card">
+            <span class="principle-number">03</span>
+            <p>Achados isolados foram separados de padrões que realmente merecem confirmação ou ação.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section compact-section" aria-label="Seleção de perfil">
+        <div class="profile-switch" role="group" aria-label="Filtrar conteúdo por pessoa">
+          <button class="profile-button active" type="button" data-profile="all" aria-pressed="true">Visão comparativa</button>
+          <button class="profile-button" type="button" data-profile="ana" aria-pressed="false">Ana · 58 anos</button>
+          <button class="profile-button" type="button" data-profile="vado" aria-pressed="false">Vado · 60 anos</button>
+        </div>
+      </section>
+
+      <aside class="reading-guide" aria-label="Como usar as explicações">
+        <span class="reading-guide-icon" aria-hidden="true">?</span>
+        <div><strong>Medicina traduzida.</strong><p>Os termos com linha pontilhada têm uma explicação simples. Passe o mouse, toque ou use a tecla Tab para abrir a nota.</p></div>
+      </aside>
+
+      <section class="section" aria-labelledby="panorama-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Panorama</p>
+          <h2 id="panorama-title">Dois perfis saudáveis,<br>dois focos diferentes.</h2>
+        </div>
+
+        <div class="profile-grid">
+          <article class="profile-card profile-card-ana reveal" data-person="ana">
+            <header>
+              <div>
+                <span class="profile-kicker">Ana · 58 anos</span>
+                <h3>Base metabólica favorável</h3>
+              </div>
+              <span class="signal signal-priority">1 prioridade</span>
+            </header>
+            <p>Glicemia, função renal e hepática, ferro, ferritina, B12, plaquetas e urina estão globalmente preservados. O achado central é a redução dos neutrófilos.</p>
+            <div class="metric-strip">
+              <div><span>Neutrófilos</span><strong>883</strong><small>/mm³</small></div>
+              <div><span>HbA1c</span><strong>5,2</strong><small>%</small></div>
+              <div><span>LDL-C</span><strong>132,7</strong><small>mg/dL</small></div>
+            </div>
+            <ul class="plain-list">
+              <li><span class="dot dot-red"></span>Confirmar hemograma e neutropenia</li>
+              <li><span class="dot dot-amber"></span>Reavaliar TSH limítrofe</li>
+              <li><span class="dot dot-teal"></span>Perfil glicêmico e hepatorrenal tranquilizador</li>
+            </ul>
+          </article>
+
+          <article class="profile-card profile-card-vado reveal" data-person="vado">
+            <header>
+              <div>
+                <span class="profile-kicker">Vado · 60 anos</span>
+                <h3>Boa base, risco lipídico a esclarecer</h3>
+              </div>
+              <span class="signal signal-attention">2 investigações</span>
+            </header>
+            <p>Hemograma, glicemia, função renal e hepática, PSA e urina não mostram alteração relevante. O conjunto LDL alto + HDL baixo e o padrão tireoidiano merecem avaliação coordenada.</p>
+            <div class="metric-strip">
+              <div><span>LDL-C</span><strong>178,7</strong><small>mg/dL</small></div>
+              <div><span>TSH</span><strong>6,96</strong><small>mUI/mL</small></div>
+              <div><span>HbA1c</span><strong>5,4</strong><small>%</small></div>
+            </div>
+            <ul class="plain-list">
+              <li><span class="dot dot-red"></span>Estratificar risco cardiovascular</li>
+              <li><span class="dot dot-amber"></span>Confirmar hipotireoidismo subclínico</li>
+              <li><span class="dot dot-teal"></span>Hemograma e órgãos-alvo preservados</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-tint" id="prioridades" aria-labelledby="prioridades-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Hierarquia de ação</p>
+          <h2 id="prioridades-title">O que merece atenção —<br>sem alarmismo.</h2>
+          <p>A ordem abaixo considera potencial de dano, necessidade de confirmação e possibilidade de mudar a conduta.</p>
+        </div>
+
+        <div class="priority-stack">
+          <article class="priority-item priority-red reveal" data-person="ana">
+            <div class="priority-index">01</div>
+            <div class="priority-main">
+              <div class="priority-title-row">
+                <h3>Ana · neutropenia moderada</h3>
+                <span class="signal signal-priority">Confirmar logo</span>
+              </div>
+              <p><strong>Leucócitos 3.270/mm³ e neutrófilos absolutos 883/mm³.</strong> A contagem absoluta — não o percentual — é o dado decisivo. O restante do hemograma está preservado, sugerindo um achado isolado.</p>
+              <div class="action-box">
+                <span>Próxima decisão</span>
+                <p>Repetir hemograma com diferencial e revisão de lâmina; cruzar com infecção viral recente, medicamentos e histórico de contagens anteriores.</p>
+              </div>
+              <details>
+                <summary>Por que não dá para ignorar?</summary>
+                <p>Uma contagem entre 500 e 1.000/mm³ é classificada como moderada. Pode ser transitória e benigna, mas precisa ser confirmada. Febre ou sinais de infecção com neutropenia justificam avaliação médica no mesmo dia.</p>
+              </details>
+            </div>
+          </article>
+
+          <article class="priority-item priority-red reveal" data-person="vado">
+            <div class="priority-index">02</div>
+            <div class="priority-main">
+              <div class="priority-title-row">
+                <h3>Vado · LDL e não-HDL elevados</h3>
+                <span class="signal signal-priority">Estratificar risco</span>
+              </div>
+              <p><strong>LDL-C 178,7 mg/dL, não-HDL 197 mg/dL e HDL-C 37 mg/dL.</strong> É um padrão aterogênico verdadeiro, mesmo com triglicérides normais e hábitos excelentes. O estilo de vida saudável reduz risco, mas não neutraliza exposição prolongada ao LDL.</p>
+              <div class="action-box">
+                <span>Próxima decisão</span>
+                <p>Medir pressão, levantar tabagismo e histórico familiar, calcular risco cardiovascular e discutir ApoB, Lp(a) e repetição do perfil após revisar a tireoide.</p>
+              </div>
+              <details>
+                <summary>Isso significa remédio obrigatório?</summary>
+                <p>Não apenas por este painel. A decisão depende do risco cardiovascular global, de doença prévia, diabetes, pressão, tabagismo, histórico familiar e confirmação do resultado. Porém, o nível é alto o bastante para justificar consulta direcionada — não apenas “observar”.</p>
+              </details>
+            </div>
+          </article>
+
+          <article class="priority-item priority-amber reveal" data-person="vado">
+            <div class="priority-index">03</div>
+            <div class="priority-main">
+              <div class="priority-title-row">
+                <h3>Vado · padrão de hipotireoidismo subclínico</h3>
+                <span class="signal signal-attention">Confirmar</span>
+              </div>
+              <p><strong>TSH 6,96 mUI/mL com T4 livre 0,92 ng/dL.</strong> O T4 livre normal afasta hipotireoidismo manifesto neste exame. Se persistente, o padrão pode contribuir para o LDL alto.</p>
+              <div class="action-box">
+                <span>Próxima decisão</span>
+                <p>Repetir TSH e T4 livre em condição estável, dosar anti-TPO e revisar sintomas. Tratamento abaixo de TSH 10 costuma ser individualizado.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="priority-item priority-amber reveal" data-person="ana">
+            <div class="priority-index">04</div>
+            <div class="priority-main">
+              <div class="priority-title-row">
+                <h3>Ana · TSH no limite e risco lipídico contextual</h3>
+                <span class="signal signal-attention">Acompanhar</span>
+              </div>
+              <p><strong>TSH 4,33 mUI/mL com T4 livre 1,07 ng/dL; LDL-C 132,7 mg/dL.</strong> A elevação do TSH é mínima e não sustenta diagnóstico isolado. O colesterol total 239 parece mais dramático do que o conjunto porque o HDL é 88.</p>
+              <div class="action-box">
+                <span>Próxima decisão</span>
+                <p>Repetir tireoide e definir risco cardiovascular com pressão, tabagismo, antecedentes e histórico familiar; não interpretar o colesterol total sozinho.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="priority-item priority-blue reveal" data-person="all">
+            <div class="priority-index">05</div>
+            <div class="priority-main">
+              <div class="priority-title-row">
+                <h3>Ambos · vitamina D e cristais de oxalato</h3>
+                <span class="signal signal-context">Contextualizar</span>
+              </div>
+              <p><strong>Vitamina D: Ana 28; Vado 23 ng/mL. Cristais de oxalato de cálcio: positivos em ambos.</strong> Nenhum desses achados, isoladamente, prova doença. Diretrizes recentes reconhecem incerteza sobre um “alvo ótimo” universal de vitamina D em adultos saudáveis. Cristais sem sangue, infecção ou sintomas não equivalem a cálculo renal.</p>
+              <div class="action-box">
+                <span>Próxima decisão</span>
+                <p>Revisar exposição solar, ingestão, saúde óssea e risco de cálculo; manter hidratação adequada. Evitar megadoses ou dietas restritivas sem indicação.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="comparativo" aria-labelledby="comparativo-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Comparativo objetivo</p>
+          <h2 id="comparativo-title">Os padrões aparecem<br>quando os números conversam.</h2>
+        </div>
+
+        <div class="chart-grid">
+          <article class="chart-card reveal">
+            <header>
+              <div><span class="chart-kicker">Lipídios · mg/dL</span><h3>O contraste está no LDL e no HDL</h3></div>
+              <span class="chart-note">Escala 0–200</span>
+            </header>
+            <div class="bar-chart" role="img" aria-label="Comparação de LDL, HDL e triglicérides entre Ana e Vado">
+              <div class="bar-group">
+                <span class="bar-label">LDL-C</span>
+                <div class="bar-pair">
+                  <div class="bar-track"><span class="bar bar-ana" style="--value:66.35%"><b>132,7</b></span></div>
+                  <div class="bar-track"><span class="bar bar-vado bar-alert" style="--value:89.35%"><b>178,7</b></span></div>
+                </div>
+              </div>
+              <div class="bar-group">
+                <span class="bar-label">HDL-C</span>
+                <div class="bar-pair">
+                  <div class="bar-track"><span class="bar bar-ana" style="--value:44%"><b>88</b></span></div>
+                  <div class="bar-track"><span class="bar bar-vado bar-warn" style="--value:18.5%"><b>37</b></span></div>
+                </div>
+              </div>
+              <div class="bar-group">
+                <span class="bar-label">Triglicérides</span>
+                <div class="bar-pair">
+                  <div class="bar-track"><span class="bar bar-ana" style="--value:45.5%"><b>91</b></span></div>
+                  <div class="bar-track"><span class="bar bar-vado" style="--value:46%"><b>92</b></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="chart-legend"><span><i class="legend-ana"></i>Ana</span><span><i class="legend-vado"></i>Vado</span></div>
+            <p class="chart-insight">Ana tem HDL muito alto e triglicérides baixos, tornando o total de 239 menos alarmante isoladamente. Vado tem colesterol aterogênico bem mais alto; o HDL baixo reforça a necessidade de estratificação.</p>
+          </article>
+
+          <article class="chart-card reveal">
+            <header>
+              <div><span class="chart-kicker">Tireoide</span><h3>TSH alto, T4 livre preservado</h3></div>
+              <span class="chart-note">Duas escalas</span>
+            </header>
+            <div class="thyroid-plot" role="img" aria-label="Comparação do TSH e T4 livre entre Ana e Vado">
+              <div class="thyroid-person">
+                <div class="person-line"><span>Ana</span><b>TSH 4,33</b></div>
+                <div class="gauge"><span style="--value:54.1%"></span><i style="--marker:53.75%" title="Limite laboratorial aproximado"></i></div>
+                <small>T4 livre 1,07 ng/dL · normal</small>
+              </div>
+              <div class="thyroid-person">
+                <div class="person-line"><span>Vado</span><b>TSH 6,96</b></div>
+                <div class="gauge"><span class="gauge-alert" style="--value:87%"></span><i style="--marker:53.75%" title="Limite laboratorial aproximado"></i></div>
+                <small>T4 livre 0,92 ng/dL · normal</small>
+              </div>
+              <div class="gauge-axis"><span>0</span><span>8 mUI/mL</span></div>
+            </div>
+            <p class="chart-insight">O desenho é subclínico, não manifesto: TSH acima da faixa com hormônio circulante ainda normal. O resultado de Vado é mais consistente; o de Ana é limítrofe.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-dark" id="interpretacao" aria-labelledby="interpretacao-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Leitura aprofundada</p>
+          <h2 id="interpretacao-title">O que cada conjunto<br>realmente significa.</h2>
+        </div>
+
+        <div class="analysis-grid">
+          <article class="analysis-card reveal" data-person="ana">
+            <span class="analysis-tag">Ana · Hematologia</span>
+            <h3>Neutropenia isolada é o achado mais importante</h3>
+            <p>Hemoglobina 14,1, plaquetas 208 mil e índices das hemácias normais. Isso reduz a impressão de falência ampla da medula, mas não explica a neutropenia.</p>
+            <dl class="analysis-values">
+              <div><dt>Leucócitos</dt><dd>3.270/mm³</dd></div>
+              <div><dt>Neutrófilos absolutos</dt><dd>883/mm³</dd></div>
+              <div><dt>Eosinófilos</dt><dd>10% · 327/mm³</dd></div>
+            </dl>
+            <p class="correction"><strong>Possível erro de leitura:</strong> eosinófilos em 10% parecem altos, mas o valor absoluto é normal. O percentual subiu porque os neutrófilos caíram; não há eosinofilia absoluta.</p>
+          </article>
+
+          <article class="analysis-card reveal" data-person="vado">
+            <span class="analysis-tag">Vado · Cardiovascular</span>
+            <h3>Há um sinal que hábitos saudáveis não apagam</h3>
+            <p>LDL 178,7 e não-HDL 197 representam carga aterogênica relevante. Alimentação e exercício excelentes tornam mais plausíveis componentes genéticos e a contribuição tireoidiana.</p>
+            <dl class="analysis-values">
+              <div><dt>LDL-C</dt><dd>178,7 mg/dL</dd></div>
+              <div><dt>Não-HDL</dt><dd>197 mg/dL</dd></div>
+              <div><dt>HDL-C</dt><dd>37 mg/dL</dd></div>
+            </dl>
+            <p class="correction"><strong>Sem exagero:</strong> isto não prova placa, infarto futuro ou necessidade automática de estatina. Mas também não é um resultado para relativizar apenas porque a rotina é saudável.</p>
+          </article>
+
+          <article class="analysis-card reveal" data-person="ana">
+            <span class="analysis-tag">Ana · Lipídios</span>
+            <h3>Colesterol total superestima a impressão de risco</h3>
+            <p>O total 239 inclui HDL 88, uma fração muito alta. Triglicérides 91, razão total/HDL 2,72 e TG/HDL 1,03 compõem um perfil metabolicamente favorável.</p>
+            <dl class="analysis-values">
+              <div><dt>LDL-C</dt><dd>132,7 mg/dL</dd></div>
+              <div><dt>Não-HDL</dt><dd>151 mg/dL</dd></div>
+              <div><dt>HDL-C</dt><dd>88 mg/dL</dd></div>
+            </dl>
+            <p class="correction"><strong>Equilíbrio:</strong> o HDL alto melhora a leitura, mas não “anula” o LDL. A conclusão depende do risco absoluto, hoje incalculável sem pressão e histórico.</p>
+          </article>
+
+          <article class="analysis-card reveal" data-person="all">
+            <span class="analysis-tag">Ambos · Glicose e órgãos</span>
+            <h3>Não há sinal laboratorial de diabetes ou lesão orgânica</h3>
+            <p>Glicemia e HbA1c estão normais nos dois. Creatinina, ureia, AST/TGO, ALT/TGP, cálcio e urinálise não sugerem disfunção renal, hepática ou perda de proteína.</p>
+            <dl class="analysis-values">
+              <div><dt>Ana</dt><dd>Glicose 98 · HbA1c 5,2%</dd></div>
+              <div><dt>Vado</dt><dd>Glicose 95 · HbA1c 5,4%</dd></div>
+              <div><dt>Transaminases</dt><dd>Normais em ambos</dd></div>
+            </dl>
+          </article>
+
+          <article class="analysis-card reveal" data-person="vado">
+            <span class="analysis-tag">Vado · Ferro</span>
+            <h3>Ferritina 280 não diagnostica sobrecarga de ferro</h3>
+            <p>O resultado está dentro da faixa masculina do laboratório, com ferro 113 e transaminases normais. Ferritina também responde a inflamação, álcool, fígado e metabolismo.</p>
+            <p class="correction"><strong>Se houver dúvida clínica:</strong> repetir ferritina e dosar saturação de transferrina/TIBC e PCR. Hemocromatose não deve ser inferida deste número isolado.</p>
+          </article>
+
+          <article class="analysis-card reveal" data-person="ana">
+            <span class="analysis-tag">Ana · Hormonal</span>
+            <h3>FSH e estradiol formam um padrão esperado</h3>
+            <p>FSH 105 mUI/mL e estradiol 5 pg/mL são compatíveis com pós-menopausa. Sem contexto de terapia hormonal ou sintomas, são confirmação fisiológica — não um problema a tratar por número.</p>
+            <p class="correction"><strong>Saúde óssea:</strong> aos 58, a decisão sobre densitometria depende do risco de fratura, menopausa, peso, quedas, corticoides e histórico familiar.</p>
+          </article>
+
+          <article class="analysis-card reveal" data-person="ana">
+            <span class="analysis-tag">Ana · Cortisol</span>
+            <h3>Um cortisol aleatório não fecha diagnóstico</h3>
+            <p>O cortisol 16,90 µg/dL precisa do horário real, tempo desde o despertar, estresse, exercício e medicamentos. Mesmo se acima da faixa vespertina impressa, não diagnostica excesso de cortisol.</p>
+            <p class="correction"><strong>Conduta:</strong> investigar apenas se houver sinais clínicos compatíveis, usando testes validados; diretriz recomenda contra cortisol sérico aleatório para rastrear Cushing.</p>
+          </article>
+
+          <article class="analysis-card reveal" data-person="all">
+            <span class="analysis-tag">Ambos · Urina</span>
+            <h3>Cristais são uma pista, não uma pedra</h3>
+            <p>Oxalato de cálcio positivo, sem sangue, proteína, nitrito ou leucocitúria relevante. Isso pode refletir concentração urinária, dieta ou variação de coleta.</p>
+            <p class="correction"><strong>Conduta prática:</strong> hidratação regular e revisão apenas se houver cólica, cálculo prévio, hematúria ou recorrência. Não restringir cálcio alimentar automaticamente.</p>
+          </article>
+        </div>
+
+        <aside class="what-not-to-conclude reveal">
+          <p class="eyebrow">O que os exames não autorizam concluir</p>
+          <div class="not-grid">
+            <p>“Ana tem doença da tireoide”<span>TSH limítrofe exige confirmação.</span></p>
+            <p>“Vado tem hemocromatose”<span>Ferritina isolada não basta.</span></p>
+            <p>“Ambos têm deficiência grave de vitamina D”<span>Não; o alvo universal é controverso.</span></p>
+            <p>“Cristais significam cálculo renal”<span>Não sem clínica ou imagem.</span></p>
+            <p>“HDL alto zera o LDL da Ana”<span>Melhora o perfil, mas não cancela risco.</span></p>
+            <p>“Há Cushing pelo cortisol da Ana”<span>Cortisol aleatório não serve para isso.</span></p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section" id="resultados" aria-labelledby="resultados-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Tabela completa</p>
+          <h2 id="resultados-title">Cada exame, sua função<br>e a leitura contextual.</h2>
+          <p>“Faixa do laudo” reproduz a lógica do laboratório quando relevante. A coluna de leitura considera o conjunto, não apenas a marcação alto/baixo.</p>
+        </div>
+
+        <div class="table-tools reveal">
+          <label class="search-field">
+            <span class="sr-only">Buscar exame</span>
+            <input id="examSearch" type="search" placeholder="Buscar exame, sistema ou interpretação…" autocomplete="off">
+          </label>
+          <label class="select-field">
+            <span class="sr-only">Filtrar por sistema</span>
+            <select id="systemFilter">
+              <option value="all">Todos os sistemas</option>
+              <option value="Hematologia">Hematologia</option>
+              <option value="Cardiovascular">Cardiovascular</option>
+              <option value="Tireoide">Tireoide</option>
+              <option value="Glicemia">Glicemia</option>
+              <option value="Rins e urina">Rins e urina</option>
+              <option value="Fígado">Fígado</option>
+              <option value="Vitaminas e ferro">Vitaminas e ferro</option>
+              <option value="Hormonal">Hormonal</option>
+              <option value="Prevenção">Prevenção</option>
+            </select>
+          </label>
+          <label class="select-field">
+            <span class="sr-only">Filtrar por leitura</span>
+            <select id="statusFilter">
+              <option value="all">Todas as leituras</option>
+              <option value="priority">Prioridade</option>
+              <option value="attention">Atenção</option>
+              <option value="context">Contexto</option>
+              <option value="good">Favorável</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="table-wrap reveal">
+          <table>
+            <thead>
+              <tr>
+                <th>Pessoa / exame</th>
+                <th>Resultado</th>
+                <th>Para que serve</th>
+                <th>Leitura contextual</th>
+                <th>Conduta a discutir</th>
+              </tr>
+            </thead>
+            <tbody id="examTableBody"></tbody>
+          </table>
+          <div class="empty-state" id="emptyState" hidden>Nenhum resultado corresponde aos filtros.</div>
+        </div>
+        <p class="table-count" id="tableCount" aria-live="polite"></p>
+      </section>
+
+      <section class="section section-tint" id="plano" aria-labelledby="plano-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Plano prático</p>
+          <h2 id="plano-title">Próximos passos,<br>em ordem de utilidade.</h2>
+        </div>
+
+        <div class="plan-columns">
+          <article class="plan-card reveal" data-person="ana">
+            <header><span class="profile-kicker">Ana</span><h3>Confirmar antes de interpretar demais</h3></header>
+            <ol class="timeline">
+              <li>
+                <span class="time">Prioritário</span>
+                <div><h4>Repetir hemograma</h4><p>Hemograma completo com diferencial, contagem absoluta e revisão de lâmina. Comparar com exames antigos.</p></div>
+              </li>
+              <li>
+                <span class="time">Mesmo dia se houver febre</span>
+                <div><h4>Avaliação médica</h4><p>Febre, calafrios, aftas importantes ou sinais de infecção com neutropenia não devem aguardar consulta rotineira.</p></div>
+              </li>
+              <li>
+                <span class="time">6–12 semanas</span>
+                <div><h4>Rever tireoide</h4><p>TSH, T4 livre e anti-TPO; anotar sintomas, infecção recente, biotina e outros suplementos.</p></div>
+              </li>
+              <li>
+                <span class="time">Consulta programada</span>
+                <div><h4>Risco cardiovascular e ósseo</h4><p>Pressão, histórico familiar, tabagismo, peso/altura e risco de fratura. Discutir ApoB/Lp(a) se fizer sentido.</p></div>
+              </li>
+            </ol>
+          </article>
+
+          <article class="plan-card reveal" data-person="vado">
+            <header><span class="profile-kicker">Vado</span><h3>Conectar tireoide e risco cardiovascular</h3></header>
+            <ol class="timeline">
+              <li>
+                <span class="time">Consulta programada</span>
+                <div><h4>Estratificar risco</h4><p>Medir pressão corretamente e reunir tabagismo, doença cardiovascular prévia e história familiar precoce.</p></div>
+              </li>
+              <li>
+                <span class="time">6–12 semanas</span>
+                <div><h4>Confirmar tireoide</h4><p>Repetir TSH e T4 livre, dosar anti-TPO e cruzar com sintomas e medicamentos.</p></div>
+              </li>
+              <li>
+                <span class="time">Após revisão tireoidiana</span>
+                <div><h4>Repetir lipídios</h4><p>Perfil lipídico, não-HDL, ApoB e Lp(a) uma vez; então discutir necessidade e intensidade de tratamento.</p></div>
+              </li>
+              <li>
+                <span class="time">Se ferritina persistir alta</span>
+                <div><h4>Completar estudo do ferro</h4><p>Saturação de transferrina/TIBC, ferritina e PCR; revisar álcool, fígado e suplementos com ferro.</p></div>
+              </li>
+            </ol>
+          </article>
+        </div>
+
+        <div class="treatment-note reveal">
+          <span class="eyebrow">Sobre tratamento</span>
+          <h3>Nenhum tratamento medicamentoso deve ser decidido por esta leitura isolada.</h3>
+          <p>As ações propostas são de confirmação, estratificação e discussão clínica. O tratamento para tireoide, colesterol, vitamina D ou qualquer outro eixo depende de sintomas, persistência, risco global, medicamentos em uso e exame físico.</p>
+        </div>
+      </section>
+
+      <section class="section" id="consultas" aria-labelledby="consultas-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Preparação para consulta</p>
+          <h2 id="consultas-title">As informações que faltam<br>podem mudar a conclusão.</h2>
+        </div>
+
+        <div class="consult-grid">
+          <article class="question-card reveal">
+            <span>01</span><h3>Medicamentos e suplementos</h3>
+            <p>Biotina, hormônios, corticoides, antitireoidianos, anticonvulsivantes, antibióticos recentes, suplementos com ferro ou vitamina D.</p>
+          </article>
+          <article class="question-card reveal">
+            <span>02</span><h3>Pressão e risco cardiovascular</h3>
+            <p>Pressão média domiciliar, tabagismo atual ou prévio, infarto/AVC/doença arterial e histórico familiar precoce.</p>
+          </article>
+          <article class="question-card reveal">
+            <span>03</span><h3>Contexto da neutropenia</h3>
+            <p>Infecção ou febre nas semanas anteriores, aftas recorrentes, infecções frequentes e hemogramas antigos da Ana.</p>
+          </article>
+          <article class="question-card reveal">
+            <span>04</span><h3>Sintomas de tireoide</h3>
+            <p>Frio, constipação, pele seca, fadiga fora do padrão, sonolência, ganho de peso, queda de cabelo e alteração de humor.</p>
+          </article>
+          <article class="question-card reveal">
+            <span>05</span><h3>Dados corporais e ósseos</h3>
+            <p>Peso, altura, menopausa, fraturas, quedas, uso de corticoide, densitometria prévia e histórico familiar de fratura de quadril.</p>
+          </article>
+          <article class="question-card reveal">
+            <span>06</span><h3>Coleta do cortisol</h3>
+            <p>Horário exato, horário de despertar, treino, estresse, café e medicações no dia da coleta da Ana.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-glossary" id="glossario" aria-labelledby="glossario-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Dicionário sem “mediquês”</p>
+          <h2 id="glossario-title">Os termos difíceis,<br>explicados com clareza.</h2>
+          <p>Imagine o corpo como uma cidade: o sangue transporta, os órgãos trabalham, os hormônios enviam recados e os exames são sensores. Este glossário explica o que cada sensor observa.</p>
+        </div>
+        <div class="glossary-tools reveal">
+          <label class="search-field">
+            <span class="sr-only">Buscar termo no glossário</span>
+            <input id="glossarySearch" type="search" placeholder="Buscar uma palavra difícil…" autocomplete="off">
+          </label>
+          <p id="glossaryCount" aria-live="polite"></p>
+        </div>
+        <div class="glossary-grid reveal" id="glossaryGrid"></div>
+        <div class="empty-state glossary-empty" id="glossaryEmpty" hidden>Nenhum termo encontrado.</div>
+      </section>
+
+      <section class="section section-sources" id="fontes" aria-labelledby="fontes-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Método e verificabilidade</p>
+          <h2 id="fontes-title">Como esta leitura<br>foi construída.</h2>
+        </div>
+
+        <div class="method-grid reveal">
+          <div>
+            <h3>Camada 1 · dado original</h3>
+            <p>Transcrição visual de 30 páginas fotografadas, conferida por pessoa, data, unidade e coerência entre painéis. Um coproparasitológico da Ana estava na pasta do Vado e foi reassociado.</p>
+          </div>
+          <div>
+            <h3>Camada 2 · padrão fisiológico</h3>
+            <p>Resultados foram lidos em conjunto: valores absolutos e percentuais, hormônio regulador e hormônio livre, frações lipídicas e órgãos-alvo.</p>
+          </div>
+          <div>
+            <h3>Camada 3 · decisão clínica</h3>
+            <p>O intervalo do laboratório foi tratado como referência, não sentença. A prioridade decorre de persistência provável, magnitude, risco e possibilidade de intervenção.</p>
+          </div>
+        </div>
+
+        <div class="source-list reveal">
+          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12674852/" target="_blank" rel="noreferrer"><span>01</span><div><strong>Diretriz Brasileira de Dislipidemias e Prevenção da Aterosclerose — 2025</strong><small>Estratificação de risco, LDL, não-HDL, ApoB e Lp(a).</small></div></a>
+          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10065839/" target="_blank" rel="noreferrer"><span>02</span><div><strong>European Guidelines on Diagnosis and Management of Neutropenia</strong><small>Classificação e investigação de neutropenia em adultos.</small></div></a>
+          <a href="https://www.nice.org.uk/guidance/ng145/chapter/Recommendations" target="_blank" rel="noreferrer"><span>03</span><div><strong>NICE NG145 · Thyroid disease: assessment and management</strong><small>Confirmação e manejo individualizado do hipotireoidismo subclínico.</small></div></a>
+          <a href="https://www.endocrine.org/clinical-practice-guidelines/vitamin-d-for-prevention-of-disease" target="_blank" rel="noreferrer"><span>04</span><div><strong>Endocrine Society · Vitamin D for the Prevention of Disease — 2024</strong><small>Incerteza dos alvos universais e suplementação em adultos saudáveis.</small></div></a>
+          <a href="https://www.endocrine.org/clinical-practice-guidelines/diagnosis-of-cushing-syndrome" target="_blank" rel="noreferrer"><span>05</span><div><strong>Endocrine Society · Diagnosis of Cushing’s Syndrome</strong><small>Testes validados e recomendação contra cortisol sérico aleatório.</small></div></a>
+          <a href="https://easl.eu/publication/easl-clinical-practice-guidelines-on-haemochromatosis/" target="_blank" rel="noreferrer"><span>06</span><div><strong>EASL · Clinical Practice Guidelines on Haemochromatosis</strong><small>Ferritina, saturação de transferrina e investigação de sobrecarga de ferro.</small></div></a>
+          <a href="https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/colorectal-cancer-screening" target="_blank" rel="noreferrer"><span>07</span><div><strong>USPSTF · Colorectal Cancer Screening</strong><small>Rastreamento continuado dos 45 aos 75 anos e intervalos por método.</small></div></a>
+          <a href="https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/osteoporosis-screening" target="_blank" rel="noreferrer"><span>08</span><div><strong>USPSTF · Osteoporosis Screening</strong><small>Avaliação de risco em mulheres pós-menopausa antes dos 65 anos.</small></div></a>
+        </div>
+
+        <div class="limits reveal">
+          <h3>Limites desta análise</h3>
+          <p>Não foram fornecidos pressão arterial, peso/altura, tabagismo, histórico cardiovascular e familiar, lista de medicamentos/suplementos, sintomas ou séries históricas. Essas ausências impedem calcular risco cardiovascular e concluir persistência das alterações. As imagens originais e identificadores civis não fazem parte deste site.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div><strong>Leitura integrada dos exames</strong><span>Ana &amp; Vado · julho de 2026</span></div>
+    <p>Documento educativo para apoiar conversa médica. Atualizado em 21 set 2026.</p>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Voltar ao topo">↑</button>
+  <div class="term-popover" id="termPopover" role="tooltip" aria-hidden="true"></div>
+  <script src="app.js"></script>
+</body>
+</html>
