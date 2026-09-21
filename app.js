@@ -140,15 +140,16 @@ function renderTable() {
 
   tbody.innerHTML = filtered.map(item => `
     <tr>
-      <td class="exam-name"><strong>${item.exam}</strong><small>${item.person} · ${item.system}</small><span class="table-status status-${item.status}">${labels[item.status]}</span></td>
-      <td class="result-cell"><strong>${item.result}</strong><small>${item.range}</small></td>
-      <td>${item.purpose}</td>
-      <td>${item.reading}</td>
-      <td>${item.action}</td>
+      <td class="exam-name" data-label="Pessoa / exame"><strong>${item.exam}</strong><small>${item.person} · ${item.system}</small><span class="table-status status-${item.status}">${labels[item.status]}</span></td>
+      <td class="result-cell" data-label="Resultado"><strong>${item.result}</strong><small>${item.range}</small></td>
+      <td data-label="Para que serve">${item.purpose}</td>
+      <td data-label="Leitura contextual">${item.reading}</td>
+      <td data-label="Conduta a discutir">${item.action}</td>
     </tr>`).join('');
   emptyState.hidden = filtered.length !== 0;
   tableCount.textContent = `${filtered.length} resultado${filtered.length === 1 ? '' : 's'} exibido${filtered.length === 1 ? '' : 's'}`;
   annotateTerms(tbody);
+  updateTableOverflow();
 }
 
 function annotateTerms(root) {
@@ -218,6 +219,54 @@ document.querySelectorAll('.profile-button').forEach(button => {
 });
 
 [search, systemFilter, statusFilter].forEach(control => control.addEventListener('input', renderTable));
+
+const tableWrap = document.querySelector('#examTableWrap');
+const tableScrollHint = document.querySelector('#tableScrollHint');
+let tableDragging = false;
+let tableDragMoved = false;
+let tableDragStartX = 0;
+let tableDragStartScroll = 0;
+
+function updateTableOverflow() {
+  if (!tableWrap) return;
+  const scrollable = window.innerWidth > 760 && tableWrap.scrollWidth > tableWrap.clientWidth + 2;
+  tableWrap.classList.toggle('is-scrollable', scrollable);
+  tableScrollHint.hidden = !scrollable;
+}
+
+tableWrap.addEventListener('pointerdown', event => {
+  if (event.button !== 0 || !tableWrap.classList.contains('is-scrollable') || event.target.closest('a, button, input, select, .term')) return;
+  tableDragging = true;
+  tableDragMoved = false;
+  tableDragStartX = event.clientX;
+  tableDragStartScroll = tableWrap.scrollLeft;
+  tableWrap.setPointerCapture(event.pointerId);
+  tableWrap.classList.add('dragging');
+});
+
+tableWrap.addEventListener('pointermove', event => {
+  if (!tableDragging) return;
+  const distance = event.clientX - tableDragStartX;
+  if (Math.abs(distance) > 3) tableDragMoved = true;
+  tableWrap.scrollLeft = tableDragStartScroll - distance;
+  if (tableDragMoved) event.preventDefault();
+});
+
+function endTableDrag(event) {
+  if (!tableDragging) return;
+  tableDragging = false;
+  tableWrap.classList.remove('dragging');
+  if (tableWrap.hasPointerCapture(event.pointerId)) tableWrap.releasePointerCapture(event.pointerId);
+}
+
+tableWrap.addEventListener('pointerup', endTableDrag);
+tableWrap.addEventListener('pointercancel', endTableDrag);
+tableWrap.addEventListener('click', event => { if (tableDragMoved) { event.preventDefault(); event.stopPropagation(); tableDragMoved = false; } }, true);
+tableWrap.addEventListener('keydown', event => {
+  if (event.key === 'ArrowRight') { tableWrap.scrollBy({left: 90, behavior: 'smooth'}); event.preventDefault(); }
+  if (event.key === 'ArrowLeft') { tableWrap.scrollBy({left: -90, behavior: 'smooth'}); event.preventDefault(); }
+});
+window.addEventListener('resize', updateTableOverflow, {passive:true});
 
 const themeToggle = document.querySelector('#themeToggle');
 const savedTheme = localStorage.getItem('medical-theme');

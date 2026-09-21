@@ -370,14 +370,14 @@
         </div>
 
         <aside class="what-not-to-conclude reveal">
-          <p class="eyebrow">O que os exames não autorizam concluir</p>
+          <p class="eyebrow">Conclusões que os exames não sustentam</p>
           <div class="not-grid">
-            <p>“Ana tem doença da tireoide”<span>TSH limítrofe exige confirmação.</span></p>
-            <p>“Vado tem hemocromatose”<span>Ferritina isolada não basta.</span></p>
-            <p>“Ambos têm deficiência grave de vitamina D”<span>Não; o alvo universal é controverso.</span></p>
-            <p>“Cristais significam cálculo renal”<span>Não sem clínica ou imagem.</span></p>
-            <p>“HDL alto zera o LDL da Ana”<span>Melhora o perfil, mas não cancela risco.</span></p>
-            <p>“Há Cushing pelo cortisol da Ana”<span>Cortisol aleatório não serve para isso.</span></p>
+            <article><h3>Doença da tireoide confirmada em Ana</h3><p>Não está confirmada. O TSH está apenas no limite e precisa ser repetido.</p></article>
+            <article><h3>Hemocromatose confirmada em Vado</h3><p>Não está confirmada. Ferritina isolada não demonstra sobrecarga de ferro.</p></article>
+            <article><h3>Deficiência grave de vitamina D nos dois</h3><p>Não. Os resultados são limítrofes em alguns referenciais, não de deficiência grave.</p></article>
+            <article><h3>Cálculo renal por causa dos cristais</h3><p>Não. Cristais na urina não equivalem a uma pedra no rim.</p></article>
+            <article><h3>HDL alto elimina o LDL da Ana</h3><p>Não. O HDL melhora o conjunto, mas não cancela a exposição ao LDL.</p></article>
+            <article><h3>Cushing pelo cortisol da Ana</h3><p>Não. Um cortisol sérico aleatório não confirma essa condição.</p></article>
           </div>
         </aside>
       </section>
@@ -421,7 +421,8 @@
           </label>
         </div>
 
-        <div class="table-wrap reveal">
+        <div class="table-scroll-hint" id="tableScrollHint" hidden>Arraste a tabela para os lados <span aria-hidden="true">↔</span></div>
+        <div class="table-wrap reveal" id="examTableWrap" tabindex="0" aria-label="Resultados dos exames. Quando necessário, arraste para os lados para ver todas as colunas.">
           <table>
             <thead>
               <tr>
